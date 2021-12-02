@@ -1,0 +1,14 @@
+name: Daily Scheduled Bump
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: CGA1123/dependabot-lein-runner@main
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}

@@ -4,7 +4,8 @@ A Clojure library designed to ... well, that part is up to you.
 
 ## Usage
 
-FIXME
+Info about `schedule`
+https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule
 
 ## License
 

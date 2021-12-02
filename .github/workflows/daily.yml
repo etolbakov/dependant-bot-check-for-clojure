@@ -15,7 +15,7 @@ jobs:
       - uses: CGA1123/dependabot-lein-runner@main
         env:
           GH_PACKAGES_USR: x-access-token
-          GH_PACKAGES_PSW: ${{ secrets.PATOKEN }}
+          GH_PACKAGES_PSW: ${{ secrets.GITHUB_TOKEN }}
         with:
-          token: ${{ secrets.PATOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}

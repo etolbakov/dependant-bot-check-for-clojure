@@ -2,8 +2,8 @@ name: Daily Scheduled Bump
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
-#    - cron: '30 9 * * *'
+#    - cron: '*/5 * * * *'
+    - cron: '30 9 * * *'
       #  push:
       #    branches: [ main ]
 

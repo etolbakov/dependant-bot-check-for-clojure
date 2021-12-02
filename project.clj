@@ -9,7 +9,7 @@
                                   :password :env/GH_PACKAGES_PSW}]]
 
   :dependencies [[org.clojure/clojure "1.10.3"]
-                 [metosin/jsonista                   "0.3.0"]
+                 [metosin/jsonista                   "0.3.4"]
                  [org.clojure/data.csv               "1.0.0"]
                  [uk.co.hyde-housing/test-pr-repo              "7.1.0"]
                  ]

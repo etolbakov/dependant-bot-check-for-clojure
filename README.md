@@ -7,6 +7,13 @@ A Clojure library designed to ... well, that part is up to you.
 Info about `schedule`
 https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule
 
+Cron
+https://crontab.cronhub.io/
+
+Configuration for PAT
+https://dev.to/kengotoda/a-complete-guide-to-use-dependabot-with-semantic-release-and-vercel-ncc-for-github-actions-230p
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
 ## License
 
 Copyright © 2021 FIXME

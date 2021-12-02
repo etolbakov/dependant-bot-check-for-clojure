@@ -15,5 +15,5 @@ jobs:
       - uses: CGA1123/dependabot-lein-runner@main
         with:
           token: ${{ secrets.PATOKEN }}
-          repository: ${{ github.repository }}
+          repository: ${{ github.GITHUB_TOKEN }}
           registries: https://maven.pkg.github.com/etolbakov/test-pr-repo

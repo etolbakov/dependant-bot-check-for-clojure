@@ -1,6 +1,3 @@
-(def hpm-version               "7.1.0")
-(def airfix-version           "0.3.3")
-(def mulog-version            "0.8.1")
 
 (defn ver [] (-> "./resources/salesforce-person-source.version" slurp .trim))
 
@@ -18,14 +15,14 @@
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [metosin/jsonista                   "0.3.0"]
                  [org.clojure/data.csv               "1.0.0"]
-                 [uk.co.hyde-housing/test-pr-repo             ~hpm-version]
+                 [uk.co.hyde-housing/test-pr-repo            "7.1.0"]
                  [http-kit                           "2.5.3"]
-                 [com.brunobonacci/mulog                ~mulog-version]
-                 [com.brunobonacci/mulog-cloudwatch     ~mulog-version]
-                 [com.brunobonacci/mulog-jvm-metrics    ~mulog-version]
-                 [com.brunobonacci/mulog-cloudwatch     ~mulog-version]
-                 [com.brunobonacci/mulog-zipkin         ~mulog-version]
-                 [com.brunobonacci/mulog-mbean-sampler  ~mulog-version]
+                 [com.brunobonacci/mulog                "0.8.1"]
+                 [com.brunobonacci/mulog-cloudwatch     "0.8.1"]
+                 [com.brunobonacci/mulog-jvm-metrics    "0.8.1"]
+                 [com.brunobonacci/mulog-cloudwatch     "0.8.1"]
+                 [com.brunobonacci/mulog-zipkin         "0.8.1"]
+                 [com.brunobonacci/mulog-mbean-sampler  "0.8.1"]
                  [com.brunobonacci/oneconfig         "0.21.0"]
                  [com.brunobonacci/safely            "0.7.0-alpha3"]
                  ]

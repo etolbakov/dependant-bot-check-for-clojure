@@ -1,3 +1,5 @@
+(def hpm-version              "7.1.0")
+
 (defproject dependant-bot-check-for-clojure "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
@@ -12,7 +14,7 @@
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [metosin/jsonista                   "0.3.0"]
                  [org.clojure/data.csv               "1.0.0"]
-                 [uk.co.hyde-housing/test-pr-repo            "7.1.0"]
+                 [uk.co.hyde-housing/test-pr-repo            ~hpm-version]
                  [http-kit                           "2.5.3"]
                  [com.brunobonacci/mulog                "0.8.1"]
                  [com.brunobonacci/mulog-cloudwatch     "0.8.1"]

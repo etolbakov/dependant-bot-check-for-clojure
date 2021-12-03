@@ -1,5 +1,5 @@
 
-(defn ver [] (-> "./resources/salesforce-person-source.version" slurp .trim))
+(defn ver [] (-> "./resources/dependant-bot-check-for-clojure.version" slurp .trim))
 
 (defproject dependant-bot-check-for-clojure #=(ver)
   :description "FIXME: write description"

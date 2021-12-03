@@ -1,4 +1,6 @@
 (def hpm-version              "7.1.0")
+(def airfix-version           "0.3.3")
+(def mulog-version            "0.8.1")
 
 (defproject dependant-bot-check-for-clojure "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
@@ -16,12 +18,12 @@
                  [org.clojure/data.csv               "1.0.0"]
                  [uk.co.hyde-housing/test-pr-repo            ~hpm-version]
                  [http-kit                           "2.5.3"]
-                 [com.brunobonacci/mulog                "0.8.1"]
-                 [com.brunobonacci/mulog-cloudwatch     "0.8.1"]
-                 [com.brunobonacci/mulog-jvm-metrics    "0.8.1"]
-                 [com.brunobonacci/mulog-cloudwatch     "0.8.1"]
-                 [com.brunobonacci/mulog-zipkin         "0.8.1"]
-                 [com.brunobonacci/mulog-mbean-sampler  "0.8.1"]
+                 [com.brunobonacci/mulog                ~mulog-version]
+                 [com.brunobonacci/mulog-cloudwatch     ~mulog-version]
+                 [com.brunobonacci/mulog-jvm-metrics    ~mulog-version]
+                 [com.brunobonacci/mulog-cloudwatch     ~mulog-version]
+                 [com.brunobonacci/mulog-zipkin         ~mulog-version]
+                 [com.brunobonacci/mulog-mbean-sampler  ~mulog-version]
                  [com.brunobonacci/oneconfig         "0.21.0"]
                  [com.brunobonacci/safely            "0.7.0-alpha3"]
                  ]

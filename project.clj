@@ -1,8 +1,9 @@
 (def hpm-version              "7.1.0")
 (def airfix-version           "0.3.3")
-(def mulog-version            "0.8.1")
+(def mulog-version            "0.7.1")
 
-(defproject dependant-bot-check-for-clojure "0.1.0-SNAPSHOT"
+
+(defproject dependant-bot-check-for-clojure #=(.trim (slurp "./resources/salesforce-person-source.version"))
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"

@@ -12,7 +12,7 @@
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [metosin/jsonista                   "0.3.0"]
                  [org.clojure/data.csv               "1.0.0"]
-                 [uk.co.hyde-housing/test-pr-repo            "7.1.0"]
+                 [uk.co.hyde-housing/test-pr-repo            "11.2.0"]
                  [http-kit                           "2.5.3"]
                  [com.brunobonacci/mulog                "0.8.1"]
                  [com.brunobonacci/mulog-cloudwatch     "0.8.1"]

@@ -1,9 +1,9 @@
-(def hpm-version              "7.1.0")
-(def airfix-version           "0.3.3")
-(def mulog-version            "0.7.1")
+(def test-pr-repo-version              "7.1.0")
 
 
-(defproject dependant-bot-check-for-clojure #=(.trim (slurp "./resources/salesforce-person-source.version"))
+(defn ver [] (-> "./resources/dependant-bot-check-for-clojure.version" slurp .trim))
+
+(defproject dependant-bot-check-for-clojure #=(ver)
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
@@ -17,25 +17,10 @@
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [metosin/jsonista                   "0.3.0"]
                  [org.clojure/data.csv               "1.0.0"]
-                 [uk.co.hyde-housing/test-pr-repo            ~hpm-version]
+                 [uk.co.hyde-housing/test-pr-repo    ~test-pr-repo-version]
                  [http-kit                           "2.5.3"]
-                 [com.brunobonacci/mulog                ~mulog-version]
-                 [com.brunobonacci/mulog-cloudwatch     ~mulog-version]
-                 [com.brunobonacci/mulog-jvm-metrics    ~mulog-version]
-                 [com.brunobonacci/mulog-cloudwatch     ~mulog-version]
-                 [com.brunobonacci/mulog-zipkin         ~mulog-version]
-                 [com.brunobonacci/mulog-mbean-sampler  ~mulog-version]
-                 [com.brunobonacci/oneconfig         "0.21.0"]
-                 [com.brunobonacci/safely            "0.7.0-alpha3"]
                  ]
   :repl-options {:init-ns dependant-bot-check-for-clojure.core}
-
-
   :global-vars {*warn-on-reflection* true}
-
   :jvm-opts ["-server"]
   )
-
-
-
-

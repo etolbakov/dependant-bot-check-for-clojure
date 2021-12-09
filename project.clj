@@ -1,7 +1,7 @@
 (def test-pr-repo-version              "7.1.0")
 
 
-(defn ver [] (-> "./resources/dependant-bot-check-for-clojure.version" slurp .trim))
+(defn ver [] "0.1.0-SNAPSHOT")
 
 (defproject dependant-bot-check-for-clojure #=(ver)
   :description "FIXME: write description"

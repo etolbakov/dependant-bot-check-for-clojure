@@ -14,6 +14,10 @@ Configuration for PAT
 https://dev.to/kengotoda/a-complete-guide-to-use-dependabot-with-semantic-release-and-vercel-ncc-for-github-actions-230p
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
+```clojure
+(defn ver [] (-> "./resources/dependant-bot-check-for-clojure.version" slurp .trim))
+```
+
 ## License
 
 Copyright © 2021 FIXME
